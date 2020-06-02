@@ -1,0 +1,19 @@
+<!-- 1. html事件处理程序，即事件是直接加载html上的。如下面的onclick
+   缺点：html和js紧密耦合 -->
+
+<html>
+  <head>
+    <title>事件流</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="box">
+      <input type="button" value="按钮" id="btn" onclick="showMessage()">
+    </div>
+    <script>
+      function showMessage () {
+        alert("hello leo");
+      }
+    </script>
+  </body>
+</html>
