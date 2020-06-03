@@ -1,0 +1,46 @@
+<!-- 触发DOM上的事件时都会产生一个对象（事件对象Event）
+
+event对象的属性：
+
+- type，类型
+- target，事件目标。即触发事件的元素
+- stopPropagation，停止冒泡，案例中调用了这个函数，所以box没有弹出来
+- preventDefault，阻止事件的默认行为 -->
+
+<html>
+  <head>
+    <title>事件流</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="box">
+      <input type="button" value="按钮2" id="btn2">
+      <a href="https://www.leosirius.com" id="go">link</a>
+    </div>
+    <script>
+      // 这里的event就是事件对象
+      function showMessage (event) {
+        alert(event.type);
+        alert(event.target.nodeName);
+        event.stopPropagation();
+      }
+
+      function showBox(event) {
+        alert("this is box");
+      }
+
+      function stopDefault(event) {
+        event.preventDefault();
+      }
+
+      var btn2 = document.getElementById('btn2');
+      btn2.onclick = showMessage;   // 注意这里不是调用
+
+      var box = document.getElementById('box');
+      box.onclick = showBox;
+
+      var go = document.getElementById('go');
+      go.onclick = stopDefault;
+    </script>
+  </body>
+</html>
