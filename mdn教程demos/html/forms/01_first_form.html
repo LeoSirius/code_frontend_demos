@@ -1,0 +1,56 @@
+<html>
+<body>
+
+<!-- 
+  
+form元素的参数都是可选的，但一般包括两个:
+
+- action：submit时发送数据的目的url
+- method：请求的方法
+
+每个表单控件的name属性，规定的就是发送的form-data的字段名
+
+label元素的for属性，关联一个form control的id属性。
+关联之后，用户点击label，就可以focus到关联的输入中
+
+input元素的type类型：
+
+- text，默认值，最基础的类型
+- email，会自动检测输入，并提示
+
+input和textarea的默认值：
+
+- input没有结尾tag，默认值放在value属性中
+- textarea的默认值就是内容
+
+button元素的type属性：
+
+- submit：点击之后发送form-data
+- reset：点击之后恢复到默认值
+- button：没有行为。可以用js来自定义 
+
+-->
+
+<form action="/my-handling-form-page" method="post">
+  <ul>
+   <li>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="user_name111" value="ddd">
+   </li>
+   <li>
+     <label for="mail">E-mail:</label>
+     <input type="email" id="mail" name="user_email">
+   </li>
+   <li>
+     <label for="msg">Message:</label>
+     <textarea id="msg" name="user_message">dd</textarea>
+   </li>
+    <li class="button">
+      <button type="submit">Send your message</button>
+      <button type="reset">reset</button>
+    </li>
+  </ul>
+ </form>
+
+</body>
+</html>

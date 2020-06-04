@@ -1,0 +1,41 @@
+<html>
+
+<!--
+ 
+如果一个form很长，且可以明确的分成几类。则可以用fieldset来分类。如一组相关的radio或checkbox
+正如01中提到的，label是可点击的，且在点击后会focus关联的表单控件，这在radio，checkbox等中极为有用。
+
+-->
+
+<body>
+<form>
+  <fieldset>
+    <legend>Fruit juice size</legend>
+    <p>
+      <input type="radio" name="size" id="size_1" value="small">
+      <label for="size_1">Small</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_2">Medium</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_3">Large</label>
+    </p>
+  </fieldset>
+</form>
+
+<form>
+  <p>
+    <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+    <label for="taste_1">I like cherry</label>
+  </p>
+  <p>
+    <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+    <label for="taste_2">I like banana</label>
+  </p>
+</form>
+
+</body>
+</html>
