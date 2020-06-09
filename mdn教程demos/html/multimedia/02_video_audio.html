@@ -1,0 +1,43 @@
+<html>
+
+<!--
+  
+vedio的属性
+
+- controls：加上controls属性后，会使用浏览器自带的控制界面来控制视频的播放。如果不加controls则需要用js api自己实现视频的控制，否则视频无法播放。
+- autoplay：
+- loop：
+- muted：
+- poster：视频没播放时的封面图片
+
+video元素中的内容是fallback content。旧浏览器不支持video元素，就会显示其中的内容
+
+-->
+
+<body>
+  <video loop height="400px" width="400px" src="test.mov" autoplay controls>
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p>
+  </video>
+
+
+  下面的写法提供多了多种类型供浏览器选择，浏览器会播放第一个它支持的格式。type属性的值就是MIME类型
+  <video controls>
+    <source src="rabbit320.mp4" type="video/mp4">
+    <source src="rabbit320.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+  </video>
+</body>
+</html>
+
+<!--
+
+  像MP3, MP4 and WebM等视频格式称为容器格式。
+其中包括了metadata, audio-tracks, video-tracks, text-tracks等
+
+- WebM通常用Vorbis or Opus做audio，VP8/VP9做vedio
+- MP4用AAC or MP3做audio，H.264做vedio
+- Ogg用Vorbis做audio，Theora做vedio
+
+audio除了height，width和poster。其他video支持的元素，audio都支持。
+
+-->
