@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+  
+这里例子循环10000000来模拟等来。连续n次快速点击按钮。经过一段后（假设按一次等x时间）
+每x时间会log一次，但是对文本的修改在n * x时间等完后，才会显示出来。
+
+-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Simple synchronous JavaScript example</title>
+  </head>
+  <body>
+    <button>Click me</button>
+    <script>
+      const btn = document.querySelector('button');
+      btn.addEventListener('click', () => {
+        let myDate;
+        for(let i = 0; i < 10000000; i++) {
+          let date = new Date();
+          myDate = date
+        }
+
+        console.log(myDate);
+
+        let pElem = document.createElement('p');
+        pElem.textContent = 'This is a newly-added paragraph.';
+        document.body.appendChild(pElem);
+      });
+    </script>
+  </body>
+</html>
