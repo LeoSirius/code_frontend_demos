@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>requestAnimationFrame spinner example</title>
+    <style>
+      html {
+        background-color: white;
+        height: 100%;
+      }
+
+      body {
+        height: inherit;
+        background-color: red;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div {
+        display: inline-block;
+        font-size: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>↻</div>
+    <script>
+
+      // Store reference to the div element, create a rotate counter and null startTime
+      // and create an uninitialized variable to store the requestAnimationFrame() call in
+      const spinner = document.querySelector('div');
+      let rotateCount = 0;
+      let startTime = null;
+      let rAF;
+
+      // Create a draw() function
+      function draw(timestamp) {
+        // 第一次调用时是null，后面startTime会被赋上通过requestAnimationFrame中调用传来的参数
+        // timestamp则会每次都更新
+        // rotateCount便随着这两个值的差值的变化而更新
+        if(!startTime) {
+         startTime = timestamp;
+        }
+
+        // 分母越小，值越大，转得越快
+        rotateCount = (timestamp - startTime) / 100;
+
+        // If rotateCount gets over 359, set it to 'remainder of dividing by 360'
+        if(rotateCount > 359) {
+          rotateCount %= 360;
+        }
+
+        // Set the rotation of the div to be equal to rotateCount degrees
+        spinner.style.transform = 'rotate(' + rotateCount + 'deg)';
+
+        // Call the next frame in the animation
+        rAF = requestAnimationFrame(draw);
+      }
+
+      draw();
+
+    </script>
+  </body>
+</html>

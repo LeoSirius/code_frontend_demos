@@ -1,0 +1,31 @@
+下面三个函数都是在一个主线程中执行的，执行时会block
+
+- setTimeout()：clearTimeout可以在执行前取消
+- setInterval()：例子中用这个函数每秒更新一次时间，clearInterval可以取消
+- requestAnimationFrame()：专门用来高效的在浏览器播放动画，可以看做是setInterval的现代版本
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple setInterval clock</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="clock"></p>
+    <script>
+      function displayTime() {
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        document.querySelector('.clock').textContent = time;
+      }
+
+      displayTime();
+      const createClock = setInterval(displayTime, 1000);
+    </script>
+  </body>
+</html>
