@@ -60,6 +60,7 @@
 }
 
 .avatar-outline {
+  float: left;
   position: relative;
   top: -100px;
   left: -50px;

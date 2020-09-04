@@ -45,6 +45,7 @@
 }
 
 .avatar-outline {
+  float: left;
   position: relative;
   top: -100px;
   left: -50px;
@@ -75,5 +76,8 @@
 .icon-container {
   width: 60px;
   height: 20px;
-  background-color: grey;
+  background-color: greenyellow;
+
+  display: flex;
+  position: relative;
 }
