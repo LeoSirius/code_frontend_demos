@@ -35,9 +35,10 @@
 .profile-bg {
   width: 300px;
   height: 100px;
-  display: flex;
 
-  background: linear-gradient(80deg, #E9F3E6 0% 70%, white 70% 100%) no-repeat;
+  /* background: linear-gradient(80deg, #E9F3E6 0% 70%, white 70% 100%) no-repeat; */
+  background: linear-gradient(90deg, #E9F3E6 0% 95%, white 95% 100%) no-repeat;
+
   border-radius: 10px;
   box-shadow: 0 0 20px 5px rgb(201, 201, 201);
 
@@ -74,10 +75,38 @@
 }
 
 .icon-container {
-  width: 60px;
-  height: 20px;
-  background-color: greenyellow;
+  width: 200px;
+  height: 40px;
+  /* background-color: greenyellow; */
 
-  display: flex;
   position: relative;
+  bottom: -60px;
+  left:30%;
+
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+}
+
+/* .icon > div {
+  flex: 1;
+} */
+
+.icon-github {
+  background: url(./icons/github.svg) no-repeat;
+}
+
+.icon-zhihu {
+  background: url(./icons/zhihu.png) no-repeat;
+}
+
+.icon-blog {
+  background: url(./icons/blog.svg) no-repeat;
+}
+
+.icon-email {
+  background: url(./icons/email.svg) no-repeat;
 }
