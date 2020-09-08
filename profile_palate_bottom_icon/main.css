@@ -33,8 +33,8 @@
 }
 
 .profile-bg {
-  width: 300px;
-  height: 100px;
+  width: 330px;
+  height: 120px;
 
   /* background: linear-gradient(80deg, #E9F3E6 0% 70%, white 70% 100%) no-repeat; */
   background: linear-gradient(90deg, #E9F3E6 0% 95%, white 95% 100%) no-repeat;
@@ -48,11 +48,11 @@
 .avatar-outline {
   float: left;
   position: relative;
-  top: -100px;
+  top: -120px;
   left: -50px;
   background-color: white;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   box-shadow: -10px 0 25px 2.5px rgb(201, 201, 201);
 
@@ -61,34 +61,41 @@
 
 .avatar-img-container {
   position: relative;
-  top: 5px;
-  left: 5px;
+  top: 7.5px;
+  left: 7.5px;
 
-  height: 90px;
-  width: 90px;
+  height: 105px;
+  width: 105px;
   border-radius: 50%;
 
   background: url(./e2.jpeg) no-repeat;
-  background-size: 90px;
+  background-size: 105px;
 
   animation: avatar-img-rotate 0.5s ease-in;
 }
 
 .icon-container {
-  width: 200px;
-  height: 40px;
+  width: 220px;
+  height: 50px;
   /* background-color: greenyellow; */
 
   position: relative;
   bottom: -60px;
-  left:30%;
+  left:27%;
 
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: gray;
+  border-radius: 50%;
+  
 }
 
 .icon:hover {
@@ -98,22 +105,33 @@
 }
 
 .icon-github {
-  background: url(./icons/github.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;  
+  background: url(./icons/github-green.png) no-repeat;
   background-size: 40px 40px;
 }
 
 .icon-zhihu {
-
-  background: url(./icons/zhihu.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;  
+  background: url(./icons/zhihu-green.png) no-repeat;
   background-size: 40px 40px;
 }
 
 .icon-blog {
-  background: url(./icons/blogger.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;  
+  background: url(./icons/blogger-green.png) no-repeat;
   background-size: 40px 40px;
 }
 
 .icon-email {
-  background: url(./icons/email.svg) no-repeat;
-  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;  
+  background: url(./icons/email-green.png) no-repeat;
+  background-size: 40px 40px;;
 }
