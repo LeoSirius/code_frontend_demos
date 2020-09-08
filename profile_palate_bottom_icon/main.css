@@ -5,7 +5,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 
@@ -91,22 +91,29 @@
   display: inline-flex;
 }
 
-/* .icon > div {
-  flex: 1;
-} */
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.1s;
+}
 
 .icon-github {
   background: url(./icons/github.svg) no-repeat;
+  background-size: 40px 40px;
 }
 
 .icon-zhihu {
-  background: url(./icons/zhihu.png) no-repeat;
+
+  background: url(./icons/zhihu.svg) no-repeat;
+  background-size: 40px 40px;
 }
 
 .icon-blog {
-  background: url(./icons/blog.svg) no-repeat;
+  background: url(./icons/blogger.svg) no-repeat;
+  background-size: 40px 40px;
 }
 
 .icon-email {
   background: url(./icons/email.svg) no-repeat;
+  background-size: 40px 40px;
 }
