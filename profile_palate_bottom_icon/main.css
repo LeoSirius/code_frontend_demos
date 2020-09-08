@@ -37,10 +37,10 @@
   height: 120px;
 
   /* background: linear-gradient(80deg, #E9F3E6 0% 70%, white 70% 100%) no-repeat; */
-  background: linear-gradient(90deg, #E9F3E6 0% 95%, white 95% 100%) no-repeat;
+  background: linear-gradient(90deg, #EEA303 0% 95%, white 95% 100%) no-repeat;
 
   border-radius: 10px;
-  box-shadow: 0 0 20px 5px rgb(201, 201, 201);
+  box-shadow: 0 0 20px 5px rgb(255, 233, 200);
 
   animation: expand 0.5s ease-in;
 }
@@ -93,7 +93,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: gray;
+  background-color: white;
   border-radius: 50%;
   
 }
@@ -107,7 +107,7 @@
 .icon-github {
   width: 40px;
   height: 40px;
-  display: inline-block;  
+  display: inline-block;
   background: url(./icons/github-green.png) no-repeat;
   background-size: 40px 40px;
 }
@@ -115,7 +115,7 @@
 .icon-zhihu {
   width: 40px;
   height: 40px;
-  display: inline-block;  
+  display: inline-block;
   background: url(./icons/zhihu-green.png) no-repeat;
   background-size: 40px 40px;
 }
@@ -123,7 +123,7 @@
 .icon-blog {
   width: 40px;
   height: 40px;
-  display: inline-block;  
+  display: inline-block;
   background: url(./icons/blogger-green.png) no-repeat;
   background-size: 40px 40px;
 }
@@ -131,7 +131,7 @@
 .icon-email {
   width: 40px;
   height: 40px;
-  display: inline-block;  
+  display: inline-block;
   background: url(./icons/email-green.png) no-repeat;
   background-size: 40px 40px;;
 }
