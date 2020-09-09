@@ -123,6 +123,17 @@
   transform: scaleY(0.8);
 
   background: url(./icons/three-lines.png) no-repeat;
+  /* background: url(./icons/arrow.png) no-repeat; */
+  background-size: 100%;
+}
+
+.tool-img-container.arrow {
+  width:30px;
+  height:30px;
+
+  transform: scaleY(0.8);
+
+  background: url(./icons/arrow.png) no-repeat;
   background-size: 100%;
 }
 

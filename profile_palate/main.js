@@ -5,10 +5,13 @@ var toolContainer = document.getElementById('toolContainer');
 //   if 
 // }
 
-var changeToolIcon = function(e) {
-  console.log(e.target.classList)
-  console.log(e.target.classList);
-  e.target.classList.add('arrow')
+var toggleArrowClass = function(e) {
+  e.target.style.transform = 'rotate(-180deg)';
 
+  if (e.target.classList.contains('arrow')) {
+    e.target.classList.remove('arrow');
+  } else {
+    e.target.classList.add('arrow');
+  }
 };
-toolContainer.addEventListener('click', changeToolIcon);
+toolContainer.addEventListener('click', toggleArrowClass);
