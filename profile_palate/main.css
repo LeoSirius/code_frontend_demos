@@ -42,9 +42,7 @@
   }
 }
 
-@keyframes icon-fly {
-  50%
-}
+
 
 .profile-container {
   margin: 100px 100px;
@@ -138,10 +136,33 @@
   background-color: white;
 }
 
+@keyframes icon-fly {
+  0% {
+    /* transform: translateX(100px); */
+  }
+
+  50% {
+    transform: matrix(1,0, 0,1,100,-50);
+  }
+
+  100% {
+    transform: matrix(1,0,0,1,100,-100);
+  }
+}
+
+/* @keyframes icon-fly-y {
+
+
+} */
+
 .icon-github {
   width: 40px;
   height: 40px;
+  /* position: relative; */
+  left: 100px;
 
   background: url('./icons/github.png') no-repeat;
   background-size: 100%;
+  /* animation: icon-fly 1s linear;
+  animation-fill-mode: forwards; */
 }

@@ -1,8 +1,6 @@
 
 var toolContainer = document.getElementById('toolContainer');
 var whiteBg = document.getElementById('whiteBg');
-console.log(whiteBg)
-
 
 var angle = 0;
 
@@ -13,7 +11,7 @@ var toggleArrowClass = function(e) {
 
 
   if (e.target.classList.contains('arrow')) {
-    // remove arrow and white bg and icons
+    // close and hide icon
 
     e.target.style.background = "url(./icons/three-lines.png) no-repeat";
     e.target.style.backgroundSize = "100%";
@@ -21,7 +19,7 @@ var toggleArrowClass = function(e) {
 
     whiteBg.style.opacity = "0";
   } else {
-    // show arrow and white bg and icons
+    // open and show icon
 
     e.target.style.background = "url(./icons/arrow.png) no-repeat";
     e.target.style.backgroundSize = "100%";
