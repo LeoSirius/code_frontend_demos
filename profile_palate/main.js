@@ -1,6 +1,7 @@
 
 var toolContainer = document.getElementById('toolContainer');
 var whiteBg = document.getElementById('whiteBg');
+var iconGithub = document.getElementById('iconGithub');
 
 var angle = 0;
 
@@ -26,6 +27,7 @@ var toggleArrowClass = function(e) {
     e.target.classList.add('arrow');
 
     whiteBg.style.opacity = "0.8";
+
   }
 
 };
