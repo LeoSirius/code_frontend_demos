@@ -18,14 +18,14 @@
 }
 
 @keyframes orbit {
-	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  from {  transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
 @keyframes orbit_space_ship {
   /* only rotate around sun */
-	from { 	transform: rotate(0deg) translateX(150px); }
-	to   {  transform: rotate(-360deg) translateX(150px); }
+  from {  transform: rotate(0deg) translateX(150px); }
+  to   {  transform: rotate(-360deg) translateX(150px); }
 }
 
 .planet {
