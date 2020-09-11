@@ -1,0 +1,62 @@
+.dark-bg {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  background-color: black;
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+  position: relative;
+  top: 200px;
+
+  background: url('./icons/sun.png') no-repeat;
+  background-size: contain;
+}
+
+@keyframes orbit {
+	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes orbit_space_ship {
+  /* only rotate around sun */
+	from { 	transform: rotate(0deg) translateX(150px); }
+	to   {  transform: rotate(-360deg) translateX(150px); }
+}
+
+.planet {
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+  position: relative;
+  top: 150px;
+
+  background: url('./icons/planet.png') no-repeat;
+  background-size: contain;
+
+  /* rotate will rotate around transform origin, This defaults to the center of the element. */
+  /* the second rotate is centered to icon, so planet won't spin itself while round sun. */
+  /* transform: rotate(45deg) translateX(150px) rotate(-45deg); */
+
+  animation: orbit 4s linear infinite;
+
+}
+
+.space-ship {
+  width: 50px;
+  height: 50px;
+
+  margin: auto;
+  position: relative;
+  top: 100px;
+
+  background: url('./icons/space-ship.png') no-repeat;
+  background-size: contain;
+
+  animation: orbit_space_ship 8s linear infinite;
+}
