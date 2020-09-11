@@ -19,6 +19,9 @@ var toggleArrowClass = function(e) {
     e.target.classList.remove('arrow');
 
     whiteBg.style.opacity = "0";
+
+    // iconGithub.style.animationDirection = 'reverse'
+    iconGithub.style.animation = "icon-fly-github 0.5s linear reverse forwards";
   } else {
     // open and show icon
 
@@ -27,6 +30,11 @@ var toggleArrowClass = function(e) {
     e.target.classList.add('arrow');
 
     whiteBg.style.opacity = "0.8";
+
+    iconGithub.style.animation = "icon-fly-github 0.5s linear forwards";
+    // iconGithub.style.animationDirection = ''
+    // iconGithub.style.animationFillMode = 'forwards';
+    // iconGithub.style.visibility = 'visible';
 
   }
 
