@@ -1,10 +1,10 @@
 var iconMenu = document.getElementById('icon-container-menu');
+// console.log(iconMenu)
 
 
-var handleClickMenu = function(e) {
-  console.log(e.target)
-  e.target.classList.toggle('change');
+iconMenu.onclick = function(e) {
+  e.currentTarget.classList.toggle('change');
 }
 
 
-iconMenu.addEventListener('click', handleClickMenu);
+// iconMenu.addEventListener('click', handleClickMenu);

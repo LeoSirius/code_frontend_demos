@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+  <div id="A">A
+    <div id="B">B
+      <div id="C">C</div>
+    </div>
+  </div>
+</body>
+
+<script>
+  var A = document.getElementById('A');
+  var printInfo = function(e) {
+    console.log('target is the element that triggered the event.  = ', e.target);
+    console.log('currentTarget is the element that the event listener is attached to. = ', e.currentTarget);
+  }
+  A.addEventListener('click', printInfo);
+
+</script>
+</html>

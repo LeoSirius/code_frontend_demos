@@ -11,21 +11,50 @@
   transition: 0.2s;
 }
 
-@keyframes bar1-to-X {
-  to {
-    transform: rotate(-45deg) translate(-9px, 6px);
+@keyframes bar1-to-normal {
+  70% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
+@keyframes bar1-to-X {
+  to {
+    transform: rotate(-405deg) translate(-9px, 6px);
+  }
+}
+
+.bar1 {
+  animation: bar1-to-normal 0.2s forwards ease-in;
+}
+
 .change .bar1 {
-  /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
-  /* transform: rotate(-45deg) translate(-9px, 6px); */
-  animation: bar1-to-X;
+  animation: bar1-to-X 0.2s forwards;
 }
 
 .change .bar2 {opacity: 0;}
 
+@keyframes bar3-to-normal {
+  70% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bar3-to-X {
+  to {
+    transform: rotate(405deg) translate(-8px, -8px);
+  }
+}
+
+.bar3 {
+  animation: bar3-to-normal 0.2s forwards ease-in;
+}
+
 .change .bar3 {
-  /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
-  transform: rotate(45deg) translate(-8px, -8px);
+  animation: bar3-to-X 0.2s forwards;
 }
