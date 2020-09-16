@@ -1,14 +1,21 @@
 .profile-content {
+  position: absolute;
+  left: calc(100vw / 2 - 310px);
+
   width: 620px;
   margin: 100px auto;
   font-family: Arial, Helvetica, sans-serif;
 
   color: white;
-  display: none;
+  /* display: none; */
+  transition-delay: 0.5s;
+  transition-duration: 1s;
+  opacity: 0;
 }
 
 .profile-content.change {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 
 .profile-content .profile-nav-header {
@@ -48,16 +55,50 @@
   font-weight: bold;
 
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.profile-content ul li {
+  height: 80px;
 }
 
 .profile-content ul li a {
-  padding: 10px 10px;
+  height: 80px;
+  display: inline-block;
+  line-height: 80px;
 }
 
-.profile-content ul li:hover {
+.profile-content ul li a:hover {
   background-color: #fff;
   color: #1F4A54;
+}
+
+
+.profile-content .profile-footer {
+  border-top: 2px solid #80BECE;
+  border-bottom: 2px solid #80BECE;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-content .profile-footer .profile-footer-item {
+  width: 200px;
+  height: 70px;
+
+  margin: 20px 5px;
+
+  font-size: 25px;
+  font-weight: bold;
+  color: #80BECE;
+
+  text-align: center;
+  line-height: 70px;
+}
+
+.profile-content .profile-footer .profile-footer-item:hover {
+  color: #1F4A54;
+  background-color: #80BECE;
 }
 
 

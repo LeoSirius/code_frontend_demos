@@ -1,0 +1,9 @@
+.home-bg {
+  width: 1080px;
+  margin: 100px auto;
+}
+
+.home-bg .home-logo {
+  display: flex;
+  justify-content: space-between;
+}

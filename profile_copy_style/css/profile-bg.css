@@ -1,6 +1,9 @@
 
-
 .profile-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
   background-color: #1F4A54;
 
   width: 1px;
