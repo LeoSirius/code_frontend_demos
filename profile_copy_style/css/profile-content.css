@@ -7,15 +7,14 @@
   font-family: Arial, Helvetica, sans-serif;
 
   color: white;
-  /* display: none; */
-  transition-delay: 0.5s;
+
+  /* transition-delay: 0.5s; */
   transition-duration: 1s;
   opacity: 0;
 }
 
 .profile-content.change {
-  /* display: block; */
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .profile-content .profile-nav-header {
@@ -29,6 +28,10 @@
   text-align: center;
 
   letter-spacing: 0.4rem;
+}
+
+.profile-content a {
+  text-decoration: none;
 }
 
 .profile-content .profile-nav-header .profile-name {
@@ -66,6 +69,10 @@
   height: 80px;
   display: inline-block;
   line-height: 80px;
+  color: white;
+
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .profile-content ul li a:hover {
@@ -96,9 +103,14 @@
   line-height: 70px;
 }
 
+
 .profile-content .profile-footer .profile-footer-item:hover {
   color: #1F4A54;
   background-color: #80BECE;
+  cursor: pointer;
+
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 

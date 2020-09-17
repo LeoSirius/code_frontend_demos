@@ -1,19 +1,22 @@
 var iconMenu = document.getElementById('icon-container-menu');
 var profileBG = document.getElementById('profile-bg');
 var profileContent = document.getElementById('profile-content');
-var profileFooter = document.getElementById('profile-footer');
 
 
-iconMenu.onclick = function(e) {
+handleClickMenu = function(e) {
   iconMenu.classList.toggle('change');
   profileBG.classList.toggle('change');
   profileContent.classList.toggle('change');
-  profileFooter.classList.toggle('change');
 
   if (profileContent.classList.contains('change')) {
     // show profile
+    profileContent.style.transitionDelay = '0.5s';
+    profileContent.style.opacity = '1';
+
   } else {
     // hide profile
+    profileContent.style.transitionDelay = '0s';
+    profileContent.style.opacity = '0';
   }
 }
 

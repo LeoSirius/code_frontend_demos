@@ -1,5 +1,6 @@
 .home-bg {
-  width: 1080px;
+  width: 720px;
+  height: 80vh;
   margin: 10px auto;
 }
 
@@ -33,9 +34,8 @@
 }
 
 .home-bg .home-name {
-  /* position: relative; */
+  position: relative;
   top: -550px;
-  left: 50px;
 
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 80px;
@@ -44,7 +44,7 @@
 .home-bg .home-name .home-name-box.sirius {
   position: relative;
   top: 150px;
-  left: 800px;
+  left: 600px;
 }
 
 @keyframes name-from-bottom {
@@ -56,10 +56,9 @@
   }
 }
 
-
 .home-bg .home-name .home-name-box {
   overflow: hidden;
-  /* animation: name-from-bottom 1s; */
+  width: 420px;
 }
 
 .home-bg .home-name .home-name-text-leo {
@@ -74,5 +73,13 @@
   animation: name-from-bottom 1s 1s forwards;
 }
 
+.home-bg .home-foot-text {
+  /* margin: 20px auto; */
+  text-align: center;
+  font-family: "Arial", Gadget, sans-serif;
+  font-size: 20px;
 
-
+  position: relative;
+  top: -380px;
+  
+}
